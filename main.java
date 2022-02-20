@@ -63,7 +63,7 @@ public class main{
      * CIFRADO
     *******************************/
     //Pasamos args[1] (el mensaje)
-    String cmessage =
+    String cmessage = ;
 
     /******************************
      * DECIFRADO
