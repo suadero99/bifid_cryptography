@@ -15,7 +15,7 @@ public class main{
     //Armamos nuestra cuadrícula de 5x5
     char[][] tableau = operador.arrangeTableau(key);
 
-    operador.printTableau(tableau);
+    //operador.printTableau(tableau);
     
     //Pasamos nuestros argumentos a un solo String:
     String message = "";
@@ -24,10 +24,9 @@ public class main{
     }
     //Nuestro mensaje como arreglo de caracteres, para fácil manejo
     char[] chMessage = message.toCharArray();
-    System.out.println("\nMensaje pasado a arreglo de chars\n");
 
     if(args[0].equals("ENCRYPT")){
-      System.out.println("**************CIFRADO**************");
+      //System.out.println("**************CIFRADO**************");
       String encodedMessage = ""; //será nuestro mensaje codificado
       int[] rows = operador.encodeIndexes(chMessage, tableau);
 
