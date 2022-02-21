@@ -35,6 +35,13 @@ public class main{
       for(int i=0;i<rows.length;i++){
         System.out.print(rows[i]);
       }*/
+
+      //Obtener nuevas letras en base a los nuevos índices
+      //Para eso, recorremos todos los índices de par en par
+      for(int i=0;i<rows.length;i+=2){//Inicio busqueda par en par
+        encodedMessage+=""+tableau[rows[i]][rows[i+1]];
+      }
+      System.out.println(encodedMessage);
     }
 
     if(args[0].equals("DECRYPT")){
